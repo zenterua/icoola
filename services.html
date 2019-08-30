@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Icoola</title>
+    
+    <style>
+        .loader,.loader .loaderRow{display:block}.loader{width:50px;height:50px;box-sizing:border-box;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);border-spacing:.3em}.loader .loaderRow span{display:inline-block;width:14px;height:14px;position:relative;background:#fdfdfd;opacity:0;-webkit-animation:flicker .5985999999999999s ease-out infinite alternate;animation:flicker .5985999999999999s ease-out infinite alternate}@-webkit-keyframes flicker{20%,from{opacity:0}100%,to{opacity:1}}@keyframes flicker{20%,from{opacity:0}100%,to{opacity:1}}.loader .loaderRow:nth-child(1) span:nth-child(1),.loader row:nth-child(1) span:nth-child(1){-webkit-animation-delay:.5s;animation-delay:.5s}.loader .loaderRow:nth-child(1) span:nth-child(2){-webkit-animation-delay:.7s;animation-delay:70s}.loader .loaderRow:nth-child(1) span:nth-child(3){-webkit-animation-delay:.6s animation-delay: .6s}.loader .loaderRow:nth-child(2) span:nth-child(1){-webkit-animation-delay:.2s;animation-delay:.2s}.loader .loaderRow:nth-child(2) span:nth-child(2){-webkit-animation-delay:.8s;animation-delay:.8s}.loader .loaderRow:nth-child(2) span:nth-child(3){-webkit-animation-delay:.9s;animation-delay:.9s}.loader .loaderRow:nth-child(3) span:nth-child(1){-webkit-animation-delay:.1s;animation-delay:.1s}.loader .loaderRow:nth-child(3) span:nth-child(2){-webkit-animation-delay:.3s;animation-delay:.3s}.loader .loaderRow:nth-child(3) span:nth-child(3){-webkit-animation-delay:.4s;animation-delay:.4s}
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #1b1b1b;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 8px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #1b1b1b;width: 3px;}
+    </style>
+</head>
+
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--    Loader-END  -->
+
+    <!-- Header-START -->
+    <header class="header">
+        <div class="container"> 
+            <!-- Logo-START -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <!-- Logo-END -->
+
+            <!-- Drop down menu-START -->
+            <div class="drop-open menu-mobile">
+                <span>Меню</span>
+                <img src="font/svg/menu.svg" alt="">
+            </div>
+            <!-- Drop down menu-END -->
+
+            <div class="navigation">
+                <div class="close-menu-mobile"></div>
+                <nav> 
+                    <!-- Header ling bar-START -->
+                    <div class="headerLinkBar">
+                        <div class="headerLinkBar-layer"></div>
+                        <div class="close-linkBar-layer"></div>
+                        <ul>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_1.png" alt="">
+                                    <span>iPhone X</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 8</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 7</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 6</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 6S</span> 
+                                </a>
+                            </li>
+                            <li class="access">
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_3.png" alt="">
+                                    <span>Accessories</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Header ling bar-END -->
+
+                    <div class="fr-nav">
+                        <!-- Basket-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open basket-open">   
+                                <b class="bask-number">5</b>
+                                <img src="font/svg/shopping-bag.svg" alt="">
+                            </div>
+
+                            <div class="drop-list size-3">
+                                <div class="form-basket-layer"></div>
+                                <div class="basketList">
+                                    <!-- Basket product 1-START -->
+                                    <div class="simpleBasketProduct">
+                                       
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/basket_img_1.jpg" alt="">
+                                        </a>
+                                        <h6 class="h6 as"><a href="product-detail.html">iPhone X Silicone Case - Spicy Orange</a></h6>
+                                        <div class="standart-price">9,193 грн</div>
+                                    </div>
+                                    <!-- Basket product 1-END -->
+
+                                    <!-- Basket product 2-START -->
+                                    <div class="simpleBasketProduct">
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/basket_img_2.jpg" alt="">
+                                        </a>
+                                        <h6 class="h6 as"><a href="product-detail.html">iPhone X Silicone Case - Spicy Orange</a></h6>
+                                        <div class="standart-price">9,193 грн</div>
+                                    </div>
+                                    <!-- Basket product 2-END -->
+
+                                    <a class="link-button" href="contact.html">
+                                        <span>оформити замовлення</span>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Basket-END -->
+
+                        <!-- Header Search-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open search-open">   
+                                <img src="font/svg/search.svg" alt="">
+                            </div>
+                            <form action="#" class="form-search">
+                                <div class="form-search-layer"></div>
+                                <div class="form-search-wrap">
+                                    <div class="container">
+                                        <div class="input-search">
+                                            <img src="font/svg/search.svg" alt="">
+                                            <input class="light" type="text" placeholder="Search">
+                                        </div>
+
+                                        <div class="close-search"></div> 
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Header Search-END -->
+
+                        <!-- Login-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open login-open">   
+                                <img src="font/svg/profile.svg" alt="">
+                            </div>
+                            <div class="drop-list size-3">
+                                <div class="form-login-layer"></div>
+                                <div class="close-login-layer">
+                                </div>
+                                <form action="#" class="login-form">   
+                                    <div class="title">Вхід</div>
+                                    <div class="bs-xs-20"></div>
+
+                                    <input type="email" class="simpleInput" placeholder="E-Mail" required>
+                                    <div class="bs-xs-10"></div>
+
+                                    <input type="password" class="simpleInput" placeholder="Пароль" required>
+                                    <div class="bs-xs-15"></div>
+
+                                    <a href="#" class="f-pass open-popup" data-rel="1">Забули пароль ?</a>
+                                    <div class="bs-xs-20"></div>
+
+                                    <div class="fl">
+                                       <input type="submit" value="Зареєструватися" class="input-submit"> 
+                                    </div>
+                                    <div class="fr">
+                                        <a class="link-button" href="registration.html">
+                                            <span>увійти</span>
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </form>     
+                            </div>
+                        </div>
+                        <!-- Login-END -->
+                        
+                        <!-- Language select-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open lang-open">   
+                                <img src="img/lang_1.png" alt="">
+                                <i></i>
+                            </div>
+                            <div class="drop-list size-2"> 
+                                <div class="form-login-layer"></div>
+                                <div class="close-login-layer"></div>
+                                <ul>
+                                    <li>
+                                       <a href="index.html"><img src="img/lang_1.png" alt=""><span>Ukrainian</span></a> 
+                                    </li>
+                                    <li>
+                                       <a href="index.html"><img src="img/lang_2.png" alt=""><span>Russian</span></a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Language select-END -->
+                    </div>
+                    
+                    <!-- Main menu-START -->
+                    <ul class="main-nav">
+                        <li class="active accessDropDown"><a href="#">iPhone</a></li>
+                        <li class="accessDropDown"><a href="#">Аксесуари</a></li>
+                        <li><a href="services.html">Сервіс</a></li>
+                        <li><a href="contact.html">Підписка</a></li>
+                    </ul>
+                    <!-- Main menu-END -->
+                    
+                    <!-- Drop down menu-START -->
+                    <div class="main-drop-menu">
+                        <div class="drop-down-menu">
+                            <div class="drop-open">
+                                <span>Меню</span>
+                                <img src="font/svg/menu.svg" alt="">
+                            </div> 
+                            <div class="drop-list size-1">       
+                                <ul>
+                                    <li><a href="about.html">Про нас</a></li>
+                                    <li><a href="vacancies.html">Вакансії</a></li>
+                                    <li><a href="question.html">Питання-відповіді</a></li>
+                                    <li><a href="blog.html">Блог</a></li>
+                                    <li><a href="contact.html">Контакти</a></li>
+                                    <li><a href="index.html">Фотогалерея</a></li>
+                                    <li><a href="index.html">Відеогалерея</a></li>
+                                </ul>
+                            </div>     
+                        </div>
+                    </div>
+                    <!-- Drop down menu-END -->
+                </nav>
+            </div>
+          </div>      
+    </header>
+    <!-- Header-END -->
+
+    <div class="main-content">  
+        <!-- Page banner-START -->
+        <div class="pageBanner mainVideoWrapper">
+            <div class="bgImage" style="background-image: url(img/page-banner4.jpg);">
+                <div class="videoWrapper videoBanner">
+                    <video src="video/video.mp4" loop autoplay muted></video>
+                </div>
+            </div>
+
+            <div class="container pageBannerContent">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-view">
+                            <div class="cell-view">
+                                <h1 class="h1 as light">Сервіси</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page banner-END -->
+
+        <div class="afterBannerContent" style="background-color: #fff">
+            <div class="bs-xs-50 bs-md-120"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 simpleAnimationTrgg">
+                        <div class="simple-text text-center">
+                            <h3 class="h3 as">Гарантійне обслуговування</h3>
+                        </div>
+                        <div class="bs-xs-25 bs-md-50"></div>
+
+                        <div class="row">
+                            <!-- Advantage 1-START -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service-item type-2 valign-middle">
+                                    <div class="wrap">
+                                        <img src="img/service_img_1.png" alt="">
+                                        <div class="bs-xs-15"></div>
+                                        <h6 class="h6">Гарантія</h6>
+                                        <div class="bs-xs-15"></div>
+                                        <div class="simple-text">
+                                            <p>Lorem ipsum dolor sit amet conse adipis elit</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                               <div class="bs-xs-30"></div>
+                            </div> 
+                            <!-- Advantage 1-END -->
+
+                            <!-- Advantage 2-START -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service-item type-2 valign-middle">
+                                    <div class="wrap">
+                                        <img src="img/service_img_2.png" alt="">
+                                        <div class="bs-xs-15"></div>
+                                        <h6 class="h6">Сервіс</h6>
+                                        <div class="bs-xs-15"></div>
+                                        <div class="simple-text">
+                                            <p>Lorem ipsum dolor sit amet conse adipis elit</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                               <div class="bs-xs-30"></div>
+                            </div>
+                            <!-- Advantage 2-END -->
+                            
+                            <!-- Advantage 3-START -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service-item type-2 valign-middle">
+                                    <div class="wrap">
+                                        <img src="img/service_img_3.png" alt="">
+                                        <div class="bs-xs-15"></div>
+                                        <h6 class="h6">Доставка</h6>
+                                        <div class="bs-xs-15"></div>
+                                        <div class="simple-text">
+                                            <p>Lorem ipsum dolor sit amet conse adipis elit</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="bs-xs-30"></div>
+                            </div>
+                            <!-- Advantage 3-END -->
+
+                            <!-- Advantage 4-START -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service-item type-2 valign-middle">
+                                    <div class="wrap">
+                                        <img src="img/service_img_4.png" alt="">
+                                        <div class="bs-xs-15"></div>
+                                        <h6 class="h6">Співпраця</h6>
+                                        <div class="bs-xs-15"></div>
+                                        <div class="simple-text">
+                                        <p>Lorem ipsum dolor sit amet conse adipis elit</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                               <div class="bs-xs-50 bs-sm-0"></div>
+                            </div>
+                            <!-- Advantage 4-END -->
+                        </div>
+
+                        <div class="bs-sm-0 bs-md-90"></div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="jarallax jarallaxSize2">
+                            <img class="jarallax-img" src="img/services-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-xs-30 bs-md-65"></div>
+
+                <div class="row simpleAnimationTrgg">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="simpleArticle">
+                            <h5>Сервісне обслуговування</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+
+                            <!--    Swiper-START    -->
+                            <div class="swiper-entry">
+                                <div class="swiper-container" data-loop="1" data-parallax="1"  data-breakpoints="1" data-slides-per-view="1" data-xs-slides="1" data-sm-slides="1" data-md-slides="1" data-lt-slides="1">
+                                    <div class="swiper-wrapper">
+                                        <!--    Slide1-START    -->
+                                        <div class="swiper-slide">
+                                            <div class="imgWrapper bgShadow" data-swiper-parallax="30%">
+                                                <img src="img/services-img2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--    Slide1-END  -->
+                                        
+                                        <!--    Slide2-START    -->
+                                        <div class="swiper-slide">
+                                            <div class="imgWrapper bgShadow" data-swiper-parallax="30%">
+                                                <img src="img/services-img3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--    Slide2-END  -->
+                                        
+                                        <!--    Slide3-START    -->
+                                        <div class="swiper-slide">
+                                            <div class="imgWrapper bgShadow" data-swiper-parallax="30%">
+                                                <img src="img/services-img4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--    Slide3-END  -->
+                                        
+                                        <!--    Slide4-START    -->
+                                        <div class="swiper-slide">
+                                            <div class="imgWrapper bgShadow" data-swiper-parallax="30%">
+                                                <img src="img/services-img5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--    Slide4-END  -->
+                                    </div>
+                                    <!--    Swiper poiner pagination-START  -->
+                                    <div class="swiper-pagination swiper-pagination-white"></div>
+                                    <!--    Swiper poiner pagination-END    -->
+                                </div>
+                                <div class="bs-xs-5 bs-sm-20"></div>
+                            </div>
+                            <!--    Swiper-END  -->
+
+                            <h5>Сервісний центр</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Ut enim ad minim veniam, quis nostrud</li>
+                                <li>Duis aute irure dolor in reprehenderit</li>
+                                <li>Excepteur sint occaecat cupidatat</li>
+                                <li>Sed ut perspiciatis unde</li>
+                            </ul>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+                            <h5>Можливість доставки</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bs-xs-50 bs-md-120"></div>
+
+            <!-- More detail-START -->
+            <section class="section simpleAnimationTrgg animation-type-2">
+                <a href="catalog.html" class="bottom-link bg-1">
+                    <span class="link-button light btnSize2 type-2">
+                        <i></i>
+                        <span>Інтернет - магазин</span>
+                    </span>
+                    
+                    <span class="img">
+                        <img src="img/service_bg_1.png" alt="">
+                    </span>
+                </a>
+
+                <a href="services.html" class="bottom-link bg-2">
+                    <span class="link-button light btnSize2 type-2">
+                        <i></i>
+                        <span>Сервіс</span>
+                    </span>
+                    
+                    <span class="img">
+                        <img src="img/service_bg_2.png" alt="">
+                    </span>
+                </a>
+
+                <a href="comparsion.html" class="bottom-link bg-3">
+                    <span class="link-button light btnSize2 type-2">
+                        <i></i>
+                        <span>Франчайзинг</span>
+                    </span>
+                    
+                    <span class="img">
+                        <img src="img/service_bg_3.png" alt="">
+                    </span>
+                </a>
+            </section>
+            <!-- More detail-END -->
+            
+            <!-- Footer-START -->
+            <footer class="footer">
+                <div class="bs-md-50 bs-xs-30"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            <a class="footerLogo" href="index.html"><img src="img/logo_2.png" alt=""></a>
+                            <div class="bs-xs-20"></div>
+
+                            <div class="simple-text sm">
+                               <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                            <ul class="nav-list">
+                                <li><a href="catalog.html">Інтернет-магазин</a></li>
+                                <li><a href="services.html">Сервіс</a></li>
+                                <li><a href="index.html">Франчайзинг</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                            <ul class="nav-list">
+                                <li><a href="catalog.html">Акції</a></li>
+                                <li><a href="blog.html">Новини</a></li>
+                                <li><a href="vacancies.html">Вакансії</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                            <ul class="nav-list">
+                                <li><a href="catalog.html">IPhone</a></li>
+                                <li><a href="catalog.html">IPad</a></li>
+                                <li><a href="catalog.html">Mac</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                            <ul class="nav-list">
+                                <li><a href="catalog.html">Apple TV</a></li>
+                                <li><a href="catalog.html">Music</a></li>
+                                <li><a href="catalog.html">Watch</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                          <div class="footer-share">
+                           <h6 class="title h6">Слідкуйте за нами:</h6>
+                           <div class="bs-xs-15"></div>
+                            <div class="socialWrapper">
+                                <a class="fb" href="https://www.facebook.com/" target="_blank">
+                                    <img src="font/svg/facebook-logo.svg" alt="">
+                                    <img src="font/svg/facebook-logo-white.svg" alt="">
+                                </a>
+                                <a class="tw" href="https://twitter.com/" target="_blank">
+                                    <img src="font/svg/twitter-logo-silhouette.svg" alt="">
+                                    <img src="font/svg/twitter-logo-white.svg" alt="">
+                                </a>
+                                <a class="gl" href="https://plus.google.com/" target="_blank">
+                                    <img src="font/svg/google-plus.svg" alt="">
+                                    <img src="font/svg/google-plus-white.svg" alt="">
+                                </a>
+                            </div>
+                          </div>    
+                        </div>
+                    </div>
+
+                    <div class="bs-md-50 bs-xs-30"></div>
+                </div>
+                
+                <!-- Copy-START -->
+                <div class="copy-wrap">
+                    <div class="container">
+                        <div class="copyright">&copy; 2017 Всі права захищені</div>
+                        <div class="author">
+                            <span>Cтворення сайтів</span>
+                            <a href="#" title="Cтворення сайтів">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Copy-END -->
+            </footer>
+            
+        </div>
+
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!--    Popup1-START    -->
+        <div class="popupContent" data-rel="1">
+            <div class="layerClose"></div>
+            <div class="popupContainer forgotPassWrapper">
+                <!-- Popup content-START -->
+                <h6 class="h6 as">Забули пароль?</h6>
+                <div class="bs-xs-20"></div>
+
+                <form>
+                    <input type="email" class="simpleInput" placeholder="Ваш E-Mail" required="">
+                    <div class="bs-xs-25"></div>
+
+                    <div class="link-button">
+                        <span>Відправити</span>
+                        <!-- <input type="submit" class="simpleInput"> -->
+                    </div>
+                </form>
+                    <!-- Popup content-END -->
+                
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Popup1-END  -->
+    </div>
+    <!--    Popup-END   -->
+    
+    <!-- Style-START -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Style-END -->
+    
+    <!-- Script-START -->
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js"></script>
+    <!-- Script-END -->
+
+</body>
+
+</html>

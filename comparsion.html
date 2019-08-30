@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Icoola</title>
+    
+     <style>
+        .loader,.loader .loaderRow{display:block}.loader{width:50px;height:50px;box-sizing:border-box;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);border-spacing:.3em}.loader .loaderRow span{display:inline-block;width:14px;height:14px;position:relative;background:#fdfdfd;opacity:0;-webkit-animation:flicker .5985999999999999s ease-out infinite alternate;animation:flicker .5985999999999999s ease-out infinite alternate}@-webkit-keyframes flicker{20%,from{opacity:0}100%,to{opacity:1}}@keyframes flicker{20%,from{opacity:0}100%,to{opacity:1}}.loader .loaderRow:nth-child(1) span:nth-child(1),.loader row:nth-child(1) span:nth-child(1){-webkit-animation-delay:.5s;animation-delay:.5s}.loader .loaderRow:nth-child(1) span:nth-child(2){-webkit-animation-delay:.7s;animation-delay:70s}.loader .loaderRow:nth-child(1) span:nth-child(3){-webkit-animation-delay:.6s animation-delay: .6s}.loader .loaderRow:nth-child(2) span:nth-child(1){-webkit-animation-delay:.2s;animation-delay:.2s}.loader .loaderRow:nth-child(2) span:nth-child(2){-webkit-animation-delay:.8s;animation-delay:.8s}.loader .loaderRow:nth-child(2) span:nth-child(3){-webkit-animation-delay:.9s;animation-delay:.9s}.loader .loaderRow:nth-child(3) span:nth-child(1){-webkit-animation-delay:.1s;animation-delay:.1s}.loader .loaderRow:nth-child(3) span:nth-child(2){-webkit-animation-delay:.3s;animation-delay:.3s}.loader .loaderRow:nth-child(3) span:nth-child(3){-webkit-animation-delay:.4s;animation-delay:.4s}
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #1b1b1b;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 8px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #1b1b1b;width: 3px;}
+    </style>
+</head>
+
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loaderRow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--    Loader-END  -->
+
+    <!-- Header-START -->
+    <header class="header">
+        <div class="container"> 
+            <!-- Logo-START -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <!-- Logo-END -->
+
+            <!-- Drop down menu-START -->
+            <div class="drop-open menu-mobile">
+                <span>Меню</span>
+                <img src="font/svg/menu.svg" alt="">
+            </div>
+            <!-- Drop down menu-END -->
+
+            <div class="navigation">
+                <div class="close-menu-mobile"></div>
+                <nav> 
+                    <!-- Header ling bar-START -->
+                    <div class="headerLinkBar">
+                        <div class="headerLinkBar-layer"></div>
+                        <div class="close-linkBar-layer"></div>
+                        <ul>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_1.png" alt="">
+                                    <span>iPhone X</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 8</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 7</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 6</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_2.png" alt="">
+                                    <span>iPhone 6S</span> 
+                                </a>
+                            </li>
+                            <li class="access">
+                                <a href="catalog.html">
+                                    <img src="img/cat_icon_3.png" alt="">
+                                    <span>Accessories</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Header ling bar-END -->
+
+                    <div class="fr-nav">
+                        <!-- Basket-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open basket-open">   
+                                <b class="bask-number">5</b>
+                                <img src="font/svg/shopping-bag.svg" alt="">
+                            </div>
+
+                            <div class="drop-list size-3">
+                                <div class="form-basket-layer"></div>
+                                <div class="basketList">
+                                    <!-- Basket product 1-START -->
+                                    <div class="simpleBasketProduct">
+                                       
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/basket_img_1.jpg" alt="">
+                                        </a>
+                                        <h6 class="h6 as"><a href="product-detail.html">iPhone X Silicone Case - Spicy Orange</a></h6>
+                                        <div class="standart-price">9,193 грн</div>
+                                    </div>
+                                    <!-- Basket product 1-END -->
+
+                                    <!-- Basket product 2-START -->
+                                    <div class="simpleBasketProduct">
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/basket_img_2.jpg" alt="">
+                                        </a>
+                                        <h6 class="h6 as"><a href="product-detail.html">iPhone X Silicone Case - Spicy Orange</a></h6>
+                                        <div class="standart-price">9,193 грн</div>
+                                    </div>
+                                    <!-- Basket product 2-END -->
+
+                                    <a class="link-button" href="contact.html">
+                                        <span>оформити замовлення</span>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Basket-END -->
+
+                        <!-- Header Search-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open search-open">   
+                                <img src="font/svg/search.svg" alt="">
+                            </div>
+                            <form action="#" class="form-search">
+                                <div class="form-search-layer"></div>
+                                <div class="form-search-wrap">
+                                    <div class="container">
+                                        <div class="input-search">
+                                            <img src="font/svg/search.svg" alt="">
+                                            <input class="light" type="text" placeholder="Search">
+                                        </div>
+
+                                        <div class="close-search"></div> 
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Header Search-END -->
+
+                        <!-- Login-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open login-open">   
+                                <img src="font/svg/profile.svg" alt="">
+                            </div>
+                            <div class="drop-list size-3">
+                                <div class="form-login-layer"></div>
+                                <div class="close-login-layer">
+                                </div>
+                                <form action="#" class="login-form">   
+                                    <div class="title">Вхід</div>
+                                    <div class="bs-xs-20"></div>
+
+                                    <input type="email" class="simpleInput" placeholder="E-Mail" required>
+                                    <div class="bs-xs-10"></div>
+
+                                    <input type="password" class="simpleInput" placeholder="Пароль" required>
+                                    <div class="bs-xs-15"></div>
+
+                                    <a href="#" class="f-pass open-popup" data-rel="1">Забули пароль ?</a>
+                                    <div class="bs-xs-20"></div>
+
+                                    <div class="fl">
+                                       <input type="submit" value="Зареєструватися" class="input-submit"> 
+                                    </div>
+                                    <div class="fr">
+                                        <a class="link-button" href="registration.html">
+                                            <span>увійти</span>
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </form>     
+                            </div>
+                        </div>
+                        <!-- Login-END -->
+                        
+                        <!-- Language select-START -->
+                        <div class="drop-down-menu">
+                            <div class="drop-open lang-open">   
+                                <img src="img/lang_1.png" alt="">
+                                <i></i>
+                            </div>
+                            <div class="drop-list size-2"> 
+                                <div class="form-login-layer"></div>
+                                <div class="close-login-layer"></div>
+                                <ul>
+                                    <li>
+                                       <a href="index.html"><img src="img/lang_1.png" alt=""><span>Ukrainian</span></a> 
+                                    </li>
+                                    <li>
+                                       <a href="index.html"><img src="img/lang_2.png" alt=""><span>Russian</span></a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Language select-END -->
+                    </div>
+                    
+                    <!-- Main menu-START -->
+                    <ul class="main-nav">
+                        <li class="active accessDropDown"><a href="#">iPhone</a></li>
+                        <li class="accessDropDown"><a href="#">Аксесуари</a></li>
+                        <li><a href="services.html">Сервіс</a></li>
+                        <li><a href="contact.html">Підписка</a></li>
+                    </ul>
+                    <!-- Main menu-END -->
+                    
+                    <!-- Drop down menu-START -->
+                    <div class="main-drop-menu">
+                        <div class="drop-down-menu">
+                            <div class="drop-open">
+                                <span>Меню</span>
+                                <img src="font/svg/menu.svg" alt="">
+                            </div> 
+                            <div class="drop-list size-1">       
+                                <ul>
+                                    <li><a href="about.html">Про нас</a></li>
+                                    <li><a href="vacancies.html">Вакансії</a></li>
+                                    <li><a href="question.html">Питання-відповіді</a></li>
+                                    <li><a href="blog.html">Блог</a></li>
+                                    <li><a href="contact.html">Контакти</a></li>
+                                    <li><a href="index.html">Фотогалерея</a></li>
+                                    <li><a href="index.html">Відеогалерея</a></li>
+                                </ul>
+                            </div>     
+                        </div>
+                    </div>
+                    <!-- Drop down menu-END -->
+                </nav>
+            </div>
+          </div>      
+    </header>
+    <!-- Header-END -->
+
+    <div class="main-content">  
+        <div class="bs-xs-30 bs-md-120"></div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-left">
+                        <h3 class="h3 as">Порівняйте моделі iPhone</h3>
+                    </div>
+
+                    <div class="bs-xs-15 bs-md-35"></div>
+
+                    <div class="row simpleFlex flex-xs simpleAnimationTrgg">
+                        <!-- Comparsion 1-START -->
+                        <div class="col-xs-6 col-sm-4 ajaxContentWrapper">
+                            <!--    SumoSelect-START    -->
+                            <div class="sumoWrapper">
+                                <select name="form" class="SelectBox ajaxSelect">
+                                    <option selected data-phone-src="ajax-phone.html">iPhone 6s</option>
+                                    <option data-phone-src="ajax-phone2.html">iPhone 7</option>
+                                    <option data-phone-src="ajax-phone3.html">iPhone X</option>
+                                </select>
+                            </div>
+                            <!--    SumoSelect-END  -->
+
+                            <div class="bs-xs-30 bs-md-40"></div>
+                            
+                            <div class="ajaxNewContentWrapper">
+                                <div class="comparsionContent columnFlex">
+                                    <div class="phoneWrapper">
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/phone.jpg" alt="">
+                                        </a>
+                                        <ul class="phoneColors">
+                                            <li class="phoneGrey active">
+                                                <a class="ajaxBtn" href="ajax-phone.html"></a>
+                                            </li>
+                                            <li class="phoneBlack">
+                                                <a class="ajaxBtn" href="ajax-phone-color-1-1.html"></a>
+                                            </li>
+                                            <li class="phoneGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-1-2.html"></a>
+                                            </li>
+                                            <li class="phonePinkGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-1-3.html"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bs-xs-30 bs-md-40"></div>
+
+                                    <div class="borderSeparator"></div>
+                                    
+                                    <!-- Phone information-START -->
+                                    <ul class="phoneInfo">
+                                        <li>
+                                            <span>Display</span>
+                                            <h6 class="h6 as">4.7-inch (diagonal) widescreen LCD Multi-Touch display with IPS technology</h6>
+                                        </li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">4.7-inch (diagonal) widescreen LCD Multi-Touch display with IPS technology</h6></li>
+                                        <li><h6 class="h6 as">800:1 contrast ratio (typical)</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Full sRGB standard</h6></li>
+                                        <li><h6 class="h6 as">3D Touch</h6></li>
+                                        <li><h6 class="h6 as">500 cd/m2 max brightness (typical)</h6></li>
+                                        <li>
+                                            <span>Camera</span>
+                                            <h6 class="h6 as">12MP camera</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">ƒ/2.2 aperture</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Digital zoom up to 5x</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">True Tone flash</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li>
+                                            <span>Touch ID</span>
+                                            <div class="imgWrapper">
+                                                <img src="font/svg/tap.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h6 class="h6 as">Second-generation  fingerprint sensor built into the Home button</h6>
+                                        </li>
+                                        <li>
+                                            <span>A9 chip</span>
+                                            <div class="imgWrapper">
+                                                <img src="img/phone-a9.png" alt="">
+                                            </div>
+                                        </li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Embedded M9 motion coprocessor</h6></li>
+
+                                        <li>
+                                            <span>Wireless charging</span>
+                                            <div class="emptyInfo"></div>
+                                        </li>
+
+                                        <li><div class="borderSeparator"></div></li>
+
+
+                                        <li>
+                                            <span>Capacity</span>
+                                            <h6 class="h6 as">32GB / 128GB</h6>
+                                        </li>
+                                        <li>
+                                            <span>Sensors</span>
+                                            <h6 class="h6 as">Three-axis gyro</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Accelerometer</h6></li>
+                                        <li><h6 class="h6 as">Proximity sensor</h6></li>
+                                        <li><h6 class="h6 as">Ambient light sensor</h6></li>
+                                        <li><h6 class="h6 as">Barometer</h6></li>
+                                        <li>
+                                            <span>Power and Battery</span>
+                                            <h6 class="h6 as"><div class="emptyInfo"></div></h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Built-in rechargeable lithium-ion battery </h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Charging via USB to computer system or power adapter</h6></li>
+                                        <li><h6 class="h6 as">Talk time (wireless) Up to 14 hours</h6></li>
+                                        <li><h6 class="h6 as">Internet use Up to 10 hours</h6></li>
+                                        <li><h6 class="h6 as">Video playback (wireless) Up to 11 hours</h6></li>
+                                        <li><h6 class="h6 as">Audio playback (wireless) Up to 50 hours</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li>
+                                            <span>Cellular and Wireless</span>
+                                            <h6 class="h6 as">GSM/EDGE</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">UMTS/HSPA+</h6></li>
+                                        <li><h6 class="h6 as">DC-HSDPA</h6></li>
+                                        <li><h6 class="h6 as">CDMA EV-DO Rev. A</h6></li>
+                                        <li><h6 class="h6 as">4G LTE Advanced</h6></li>
+                                        <li><h6 class="h6 as">802.11ac Wi-Fi with MIMO</h6></li>
+                                        <li><h6 class="h6 as">Bluetooth 4.2</h6></li>
+                                        <li><h6 class="h6 as">GPS, GLONASS</h6></li>
+                                        <li><h6 class="h6 as">VoLTE</h6></li>
+                                        <li><h6 class="h6 as">NFC</h6></li>
+                                        <li><h6 class="h6 as">Wi-Fi calling</h6></li>
+                                    </ul>
+                                    <!-- Phone information-END -->
+
+                                    <div class="borderSeparator"></div>
+                                    
+                                    <div class="bs-xs-30"></div>
+
+                                    <div class="text-center">
+                                        <a class="link-button" href="product-detail.html">
+                                            <span>Купити</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bs-xs-20 bs-sm-0"></div>
+                        </div>
+                        <!-- Comparsion 1-END -->
+                        
+                        <!-- Comparsion 2-START -->
+                        <div class="col-xs-6 col-sm-4 ajaxContentWrapper">
+                            <!--    SumoSelect-START    -->
+                            <div class="sumoWrapper">
+                                <select name="form" class="SelectBox ajaxSelect">
+                                    <option selected data-phone-src="ajax-phone2.html">iPhone 7</option>
+                                    <option data-phone-src="ajax-phone.html">iPhone 6s</option>
+                                    <option data-phone-src="ajax-phone3.html">iPhone X</option>
+                                </select>
+                            </div>
+                            <!--    SumoSelect-END  -->
+
+                            <div class="bs-xs-30 bs-md-40"></div>
+                            
+                            <div class="ajaxNewContentWrapper">
+                                <div class="comparsionContent columnFlex">
+                                    <div class="phoneWrapper">
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/phone2.jpg" alt="">
+                                        </a>
+                                        <ul class="phoneColors">
+                                            <li class="phoneGrey">
+                                                <a class="ajaxBtn" href="ajax-phone-color-2-1.html"></a>
+                                            </li>
+                                            <li class="phoneBlack active">
+                                                <a class="ajaxBtn" href="ajax-phone2.html"></a>
+                                            </li>
+                                            <li class="phoneGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-2-2.html"></a>
+                                            </li>
+                                            <li class="phonePinkGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-2-3.html"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bs-xs-30 bs-md-40"></div>
+
+                                    <div class="borderSeparator"></div>
+                                    
+                                    <!-- Phone information-START -->
+                                    <ul class="phoneInfo">
+                                        <li>
+                                            <span>Display</span>
+                                            <h6 class="h6 as">4.7-inch (diagonal) widescreen LCD Multi-Touch display with IPS technology</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Wi-Fi calling</h6></li>
+                                        <li><h6 class="h6 as">4.7-inch (diagonal) widescreen LCD Multi-Touch display with IPS technology</h6></li>
+                                        <li><h6 class="h6 as">1400:1 contrast ratio (typical)</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Wide colour display (P3)</h6></li>
+                                        <li><h6 class="h6 as">3D Touch</h6></li>
+                                        <li><h6 class="h6 as">625 cd/m2 max brightness (typical)</h6></li>
+                                        <li>
+                                            <span>Camera</span>
+                                            <h6 class="h6 as">12MP camera</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">ƒ/1.8 aperture</h6></li>
+                                        <li><h6 class="h6 as">Optical image stabilisation</h6></li>
+                                        <li><h6 class="h6 as">Digital zoom up to 5x</h6></li>
+                                        <li><h6 class="h6 as">Wide colour capture for photos and Live Photos </h6></li>
+                                        <li><h6 class="h6 as">Quad-LED True Tone flash</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li>
+                                            <span>Touch ID</span>
+                                            <div class="imgWrapper">
+                                                <img src="font/svg/tap.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li><h6 class="h6 as">Second-generation  fingerprint sensor built  into the Home button</h6></li>
+                                        <li>
+                                            <span>A10 chip</span>
+                                            <div class="imgWrapper">
+                                                <img src="img/phone-a10.png" alt="">
+                                            </div>
+                                        </li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Embedded M10 motion coprocessor</h6></li>
+                                        <li>
+                                            <span>Wireless charging</span>
+                                            <div class="imgWrapper">
+                                                <img src="font/svg/battery-energy.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li><div class="borderSeparator"></div></li>
+
+                                        <li>
+                                            <span>Capacity</span>
+                                            <h6 class="h6 as">32GB / 128GB</h6>
+                                        </li>
+                                        <li>
+                                            <span>Sensors</span>
+                                            <h6 class="h6 as">Three-axis gyro</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Accelerometer</h6></li>
+                                        <li><h6 class="h6 as">Proximity sensor</h6></li>
+                                        <li><h6 class="h6 as">Ambient light sensor</h6></li>
+                                        <li><h6 class="h6 as">Barometer</h6></li>
+                                        <li>
+                                            <span>Power and Battery</span>
+                                            <h6 class="h6 as"><div class="emptyInfo"></div></h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Built-in rechargeable lithium-ion battery</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+                                        <li><h6 class="h6 as">Charging via USB to computer system or power adapter</h6></li>
+                                        <li><h6 class="h6 as">Talk time (wireless) Up to 24 hours</h6></li>
+                                        <li><h6 class="h6 as">Internet use Up to 12 hours</h6></li>
+                                        <li><h6 class="h6 as">Video playback (wireless) Up to 14 hours</h6></li>
+                                        <li><h6 class="h6 as">Audio playback (wireless) Up to 80 hours</h6></li>
+                                        <li><h6 class="h6 as"><div class="emptyInfo"></div></h6></li>
+
+                                        <li>
+                                            <span>Cellular and Wireless</span>
+                                            <h6 class="h6 as">GSM/EDGE</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">UMTS/HSPA+</h6></li>
+                                        <li><h6 class="h6 as">DC-HSDPA</h6></li>
+                                        <li><h6 class="h6 as">CDMA EV-DO Rev. A</h6></li>
+                                        <li><h6 class="h6 as">4G LTE Advanced</h6></li>
+                                        <li><h6 class="h6 as">802.11ac Wi-Fi with MIMO</h6></li>
+                                        <li><h6 class="h6 as">Bluetooth 4.2</h6></li>
+                                        <li><h6 class="h6 as">GPS, GLONASS</h6></li>
+                                        <li><h6 class="h6 as">VoLTE</h6></li>
+                                        <li><h6 class="h6 as">NFC</h6></li>
+                                        <li><h6 class="h6 as">Wi-Fi calling</h6></li>
+                                    </ul>
+                                    <!-- Phone information-END -->
+
+                                    <div class="borderSeparator"></div>
+
+                                    <div class="bs-xs-30"></div>
+
+                                    <div class="text-center">
+                                        <a class="link-button" href="product-detail.html">
+                                            <span>Купити</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bs-xs-20 bs-sm-0"></div>
+                        </div>
+                        <!-- Comparsion 2-END -->
+                        
+                        <!-- Comparsion 3-START -->
+                        <div class="col-sm-4 ajaxContentWrapper hidden-xs">
+                            <!--    SumoSelect-START    -->
+                            <div class="sumoWrapper">
+                                <select name="form" class="SelectBox ajaxSelect">
+                                    <option selected data-phone-src="ajax-phone3.html">iPhone X</option>
+                                    <option data-phone-src="ajax-phone2.html">iPhone 7</option>
+                                    <option data-phone-src="ajax-phone.html">iPhone 6s</option>
+                                </select>
+                            </div>
+                            <!--    SumoSelect-END  -->
+
+                            <div class="bs-xs-30 bs-md-40"></div>
+                            
+                            <div class="ajaxNewContentWrapper">
+                                <div class="comparsionContent columnFlex">
+                                    <div class="phoneWrapper">
+                                        <a href="product-detail.html" class="imgWrapper">
+                                            <img src="img/phone3.jpg" alt="">
+                                        </a>
+
+                                        <ul class="phoneColors">
+                                            <li class="phoneGrey">
+                                                <a class="ajaxBtn" href="ajax-phone-color-3-1.html"></a>
+                                            </li>
+                                            <li class="phoneBlack active">
+                                                <a class="ajaxBtn" href="ajax-phone3.html"></a>
+                                            </li>
+                                            <li class="phoneGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-3-2.html"></a>
+                                            </li>
+                                            <li class="phonePinkGold">
+                                                <a class="ajaxBtn" href="ajax-phone-color-3-3.html"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bs-xs-30 bs-md-40"></div>
+
+                                    <div class="borderSeparator"></div>
+                                    
+                                    <!-- Phone information-START -->
+                                    <ul class="phoneInfo">
+                                        <li>
+                                            <span>Display</span>
+                                            <h6 class="h6 as">5.8-inch (diagonal) all-screen OLED Multi-Touch display</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">HDR Display</h6></li>
+                                        <li><h6 class="h6 as">2436x1125-pixel resolution at 458 ppi</h6></li>
+                                        <li><h6 class="h6 as">1,000,000:1 contrast ratio (typical)</h6></li>
+                                        <li><h6 class="h6 as">True Tone display</h6></li>
+                                        <li><h6 class="h6 as">Wide colour display (P3)</h6></li>
+                                        <li><h6 class="h6 as">3D Touch</h6></li>
+                                        <li><h6 class="h6 as">625 cd/m2 max brightness (typical)</h6></li>
+                                        <li>
+                                            <span>Camera</span>
+                                            <h6 class="h6 as">12MP wide-angle and telephoto cameras</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Wide-angle: ƒ/1.8 aperture <br> Telephoto: ƒ/2.4 aperture</h6></li>
+                                        <li><h6 class="h6 as">Dual optical image stabilisation</h6></li>
+                                        <li><h6 class="h6 as">Optical zoom; digital zoom up to 10x</h6></li>
+                                        <li><h6 class="h6 as">Wide colour capture for photos and Live Photos</h6></li>
+                                        <li><h6 class="h6 as">Quad-LED True Tone flash with slow sync</h6></li>
+                                        <li><h6 class="h6 as">Portrait mode</h6></li>
+                                        <li><h6 class="h6 as">Portrait Lighting</h6></li>
+                                        <li>
+                                            <span>Touch ID</span>
+                                            <div class="imgWrapper">
+                                                <img src="font/svg/smartphone-with-a-smile.svg" alt="">
+                                            </div>
+                                            
+                                        </li>
+                                        <li><h6 class="h6 as">Enabled by TrueDepth camera for facial recognition</h6></li>
+                                        <li>
+                                            <span>A10 chip</span>
+                                            <div class="imgWrapper">
+                                                <img src="img/phone-a11.png" alt="">
+                                            </div>
+                                        </li>
+                                        <li><h6 class="h6 as">Neural engine </h6></li>
+                                        <li><h6 class="h6 as">Embedded M11 motion coprocessor</h6></li>
+                                        <li>
+                                            <span>Wireless charging</span>
+                                            <div class="imgWrapper">
+                                                <img src="font/svg/battery-energy.svg" alt="">
+                                            </div>
+                                        </li>
+                                        <li><div class="borderSeparator"></div></li>
+
+                                        <li>
+                                            <span>Capacity</span>
+                                            <h6 class="h6 as">64GB / 2528GB</h6>
+                                        </li>
+                                        <li>
+                                            <span>Sensors</span>
+                                            <h6 class="h6 as">Three-axis gyro</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">Accelerometer</h6></li>
+                                        <li><h6 class="h6 as">Proximity sensor</h6></li>
+                                        <li><h6 class="h6 as">Ambient light sensor</h6></li>
+                                        <li><h6 class="h6 as">Barometer</h6></li>
+                                        <li>
+                                            <span>Power and Battery</span>
+                                            <h6 class="h6 as">Lasts up to 2 hours longer  than iPhone 7</h6>  
+                                        </li>
+                                        <li><h6 class="h6 as">Built-in rechargeable lithium-ion battery</h6></li>
+                                        <li><h6 class="h6 as">Wireless charging (works with Qi chargers12)</h6></li>
+                                        <li><h6 class="h6 as">Charging via USB to computer system or power adapter</h6></li>
+                                        <li><h6 class="h6 as">Talk time (wireless) Up to 21 hours</h6></li>
+                                        <li><h6 class="h6 as">Internet use Up to 12 hours</h6></li>
+                                        <li><h6 class="h6 as">Video playback (wireless) Up to 13 hours</h6></li>
+                                        <li><h6 class="h6 as">Audio playback (wireless) Up to 60 hours</h6></li>
+                                        <li><h6 class="h6 as">Fast-charge capable Up to 50% charge in  30 minutes</h6></li>
+
+                                        <li>
+                                            <span>Cellular and Wireless</span>
+                                            <h6 class="h6 as">GSM/EDGE</h6>
+                                        </li>
+                                        <li><h6 class="h6 as">UMTS/HSPA+</h6></li>
+                                        <li><h6 class="h6 as">DC-HSDPA</h6></li>
+                                        <li><h6 class="h6 as">CDMA EV-DO Rev. A (some models)</h6></li>
+                                        <li><h6 class="h6 as">4G LTE Advanced</h6></li>
+                                        <li><h6 class="h6 as">802.11ac Wi-Fi with MIMO</h6></li>
+                                        <li><h6 class="h6 as">Bluetooth 5.0</h6></li>
+                                        <li><h6 class="h6 as">GPS, GLONASS, Galileo and QZSS</h6></li>
+                                        <li><h6 class="h6 as">VoLTE</h6></li>
+                                        <li><h6 class="h6 as">NFC with reader mode</h6></li>
+                                        <li><h6 class="h6 as">Wi-Fi calling</h6></li>
+                                    </ul>
+                                    <!-- Phone information-END -->
+
+                                    <div class="borderSeparator"></div>
+                                    
+                                    <div class="bs-xs-30"></div>
+
+                                    <div class="text-center">
+                                        <a class="link-button" href="product-detail.html">
+                                            <span>Купити</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Comparsion 3-END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-xs-30 bs-md-120"></div>
+        
+        <!-- Footer-START -->
+        <footer class="footer">
+            <div class="bs-md-50 bs-xs-30"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                        <a class="footerLogo" href="index.html"><img src="img/logo_2.png" alt=""></a>
+                        <div class="bs-xs-20"></div>
+
+                        <div class="simple-text sm">
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>  
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                        <ul class="nav-list">
+                            <li><a href="catalog.html">Інтернет-магазин</a></li>
+                            <li><a href="services.html">Сервіс</a></li>
+                            <li><a href="index.html">Франчайзинг</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                        <ul class="nav-list">
+                            <li><a href="catalog.html">Акції</a></li>
+                            <li><a href="blog.html">Новини</a></li>
+                            <li><a href="vacancies.html">Вакансії</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                        <ul class="nav-list">
+                            <li><a href="catalog.html">IPhone</a></li>
+                            <li><a href="catalog.html">IPad</a></li>
+                            <li><a href="catalog.html">Mac</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-xs-12 mobileHidden">
+                        <ul class="nav-list">
+                            <li><a href="catalog.html">Apple TV</a></li>
+                            <li><a href="catalog.html">Music</a></li>
+                            <li><a href="catalog.html">Watch</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                      <div class="footer-share">
+                       <h6 class="title h6">Слідкуйте за нами:</h6>
+                       <div class="bs-xs-15"></div>
+                        <div class="socialWrapper">
+                            <a class="fb" href="https://www.facebook.com/" target="_blank">
+                                <img src="font/svg/facebook-logo.svg" alt="">
+                                <img src="font/svg/facebook-logo-white.svg" alt="">
+                            </a>
+                            <a class="tw" href="https://twitter.com/" target="_blank">
+                                <img src="font/svg/twitter-logo-silhouette.svg" alt="">
+                                <img src="font/svg/twitter-logo-white.svg" alt="">
+                            </a>
+                            <a class="gl" href="https://plus.google.com/" target="_blank">
+                                <img src="font/svg/google-plus.svg" alt="">
+                                <img src="font/svg/google-plus-white.svg" alt="">
+                            </a>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
+
+                <div class="bs-md-50 bs-xs-30"></div>
+            </div>
+            
+            <!-- Copy-START -->
+            <div class="copy-wrap">
+                <div class="container">
+                    <div class="copyright">&copy; 2017 Всі права захищені</div>
+                    <div class="author">
+                        <span>Cтворення сайтів</span>
+                        <a href="#" title="Cтворення сайтів">
+                            </a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Copy-END -->
+        </footer>
+
+    </div>
+
+    <div class="ajaxLoader">
+        
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!--    Popup1-START    -->
+        <div class="popupContent" data-rel="1">
+            <div class="layerClose"></div>
+            <div class="popupContainer forgotPassWrapper">
+                <!-- Popup content-START -->
+                <h6 class="h6 as">Забули пароль?</h6>
+                <div class="bs-xs-20"></div>
+
+                <form>
+                    <input type="email" class="simpleInput" placeholder="Ваш E-Mail" required="">
+                    <div class="bs-xs-25"></div>
+
+                    <div class="link-button">
+                        <span>Відправити</span>
+                        <!-- <input type="submit" class="simpleInput"> -->
+                    </div>
+                </form>
+                    <!-- Popup content-END -->
+                
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Popup1-END  -->
+    </div>
+    <!--    Popup-END   -->
+    
+    <!-- Style-START -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Style-END -->
+    
+    <!-- Script-START -->
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js"></script>
+    <!-- Script-END -->
+
+</body>
+
+</html>
